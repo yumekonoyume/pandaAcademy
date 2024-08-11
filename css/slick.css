@@ -1,0 +1,66 @@
+.slider .slick-slide {
+    width: 600px;
+    height: 400px;
+    margin: 0 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slider .slick-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slider .slick-arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0;
+    position: absolute;
+    top: 180px;
+    z-index: 1;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  }
+  .slider .slick-arrow::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #09000d;
+    border-width: 3px 3px 0 0;
+    position: absolute;
+    top: 24px;
+    transform: rotate(45deg);
+  }
+  .slider .slick-next {
+    right: 0;
+  }
+  .slider .slick-prev {
+    left: 0;
+  }
+  .slider .slick-next::before {
+    left: 20px;
+  }
+  .slider .slick-prev::before {
+    border-width: 0 0 3px 3px;
+    right: 22px;
+  }
+  
+  .slick-dots li button:before{
+    /* 点の大きさ */
+	font-size:1rem;
+}
+
+.slick-dots li{ 
+    /* 間の間隔 */
+	width:20px;
+}
+
+.slick-dots{
+    /* 上下の位置 */
+	bottom: -40px;
+}

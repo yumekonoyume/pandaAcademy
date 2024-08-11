@@ -1,0 +1,148 @@
+body {
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.flex-row {
+    display: flex; 
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding:0 1.5rem;
+}
+
+.btn {
+    width: 18rem;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    background: #fff;
+    padding: 18px 30px;
+    border: 3px solid #333;
+    box-shadow: 0 5px 0 #333;
+    border-radius: 6px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 #333;
+}
+
+header {
+    position: sticky;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 1000;
+}
+
+.header-logo {
+    width: 8rem;
+}
+
+.nav-li {
+    gap: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.top-wrapper {
+    width: 100%;
+    height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/top.jpg);
+    background-size: cover;
+    background-color:rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;  
+}
+
+.top-wrapper h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.top-wrapper p {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.game {
+    width: 50%;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 28rem;  
+}
+
+.board-preGame {
+    flex-direction: column;
+    background-color: rgb(123, 121, 121);
+}
+
+.board-inGame {
+    flex-direction: row;
+}
+
+.game-display {
+    justify-content: space-between;
+}
+
+
+.parent{
+    width: 20%;
+    height: 25%;
+    padding: 0.5rem;
+}
+
+.card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: 1px solid silver;
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: gray 2px 2px;
+    cursor: pointer;
+}
+
+#game_board img{
+    width: 60px;
+    height: 80px;
+}
+/* 裏の状態 */
+.back {
+    background-image: url('../img/sasa.png');
+}
+
+/* 終了時 */
+.finish {
+    opacity: 0;
+    cursor: default;
+}
+
+/* 経過秒数 */
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+}  
